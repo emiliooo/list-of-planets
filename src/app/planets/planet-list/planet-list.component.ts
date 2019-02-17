@@ -10,7 +10,7 @@ export class PlanetListComponent implements OnInit {
 
   planets: [];
   searchText: any = { name: '' };
-  nrCounter: [];
+  nrCounter = 61;
   counter = 2;
   nrPage;
 
@@ -24,7 +24,6 @@ export class PlanetListComponent implements OnInit {
 
   LoadCurency() {
     this.planetservice.getPlanets(this.nrPage).subscribe(res => {
-      this.nrCounter = res;
       this.planets = res.results;
     });
   }
