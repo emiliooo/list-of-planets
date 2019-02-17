@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center">
+    <nav aria-label="pagination_label">
+      <ul class="pagination pagination-lg">
+        <li class="page-item " *ngFor="let p of pages; let i = index">
+          <a class="page-link"  (click)="setPage(i +1)"> {{i +1}}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pageInfo row justify-content-center align-items-center">
+      <p>nr page:<strong>{{actualyPage}}</strong></p>
+    </div> 
+</div>
+
+

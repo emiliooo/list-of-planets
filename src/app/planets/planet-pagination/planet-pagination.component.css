@@ -1,0 +1,10 @@
+a {
+  cursor: pointer;
+  font-size: 30px;
+}
+a:hover {
+  background-color: yellow;
+}
+li.nav-item {
+  color: #0000FF;
+}
